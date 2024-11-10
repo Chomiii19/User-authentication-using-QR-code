@@ -7,9 +7,7 @@ public class Main {
         boolean isRunning = true;
 
         while(isRunning){
-            int userChoice = menu();
-
-            switch (userChoice) {
+            switch (menu()) {
                 case 1 -> {
                     if (SignIn.signIn()) {
                         System.out.println("Successfully logged in!");
